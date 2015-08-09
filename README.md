@@ -2,6 +2,16 @@
 
 ## How to use
 
+Download latest version of the VCCW.
+
+http://vccw.cc/
+
+Provision.
+
+```
+$ vagrant up
+```
+
 SSH into your virtual machine.
 
 ```
