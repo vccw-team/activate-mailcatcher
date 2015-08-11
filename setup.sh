@@ -18,9 +18,11 @@ composer install
 
 echo "<?php
 /*
-Plugin Name: VCCW
+Plugin Name: MailCatcher
+Author: VCCW Team
+Description: Re-routes all WordPress emails to MailCatcher.
 */
 
-require_once dirname( __FILE__ ) . '/vendor/autoload.php';" > ${WP_MU_PUGINS_DIR}/plugin.php
+require_once dirname( __FILE__ ) . '/vendor/autoload.php';" > ${WP_MU_PUGINS_DIR}/mailcatcher.php
 
 mailcatcher --http-ip=$(ohai | jq -r .network.interfaces.eth1.routes[0].src)
