@@ -5,7 +5,7 @@ set -ex
 WP_MU_PUGINS_DIR=$(wp eval 'echo WP_CONTENT_DIR;')/mu-plugins
 
 if [ -e ${WP_MU_PUGINS_DIR}/composer.json ] ; then
-    echo ${WP_MU_PUGINS_DIR}'/composer.json already exists.'
+    echo 'Error: '${WP_MU_PUGINS_DIR}'/composer.json already exists.'
     exit 1
 fi
 
